@@ -1,0 +1,60 @@
+{
+  "name": "@autograders/cli",
+  "version": "1.0.0",
+  "author": "Andrés Castellanos <andres.cv@galileo.edu> (https://github.com/andrescv)",
+  "homepage": "https://github.com/autograders/cli#readme",
+  "private": false,
+  "license": "MIT",
+  "main": "bin/autograders.js",
+  "keywords": [
+    "Autograders",
+    "CLI"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/autograders/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/autograders/cli/issues"
+  },
+  "files": [
+    "dist/**/*.js",
+    "bin/**/*.js"
+  ],
+  "bin": {
+    "autograders": "./bin/autograders.js"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "rimraf dist",
+    "build": "tsc",
+    "postbuild": " tscpaths -p tsconfig.json -s ./src -o ./dist",
+    "lint": "eslint \"{src,test}/**/*.ts\""
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "arg": "^5.0.1",
+    "axios": "^0.25.0",
+    "boxen": "5.1.2",
+    "cookie": "^0.4.1",
+    "form-data": "^4.0.0",
+    "graphql": "^16.3.0",
+    "graphql-tag": "^2.12.6",
+    "ora": "5.4.1",
+    "prompts": "^2.4.2",
+    "table": "^6.8.0"
+  },
+  "devDependencies": {
+    "@autograders/eslint-config-node": "^1.0.2",
+    "@commitlint/cli": "^16.1.0",
+    "@commitlint/config-conventional": "^16.0.0",
+    "@types/adm-zip": "^0.4.34",
+    "@types/cli-table": "^0.3.0",
+    "@types/cookie": "^0.4.1",
+    "@types/prompts": "^2.0.14",
+    "husky": "^7.0.4",
+    "rimraf": "^3.0.2",
+    "tscpaths": "^0.0.9",
+    "typescript": "^4.5.5"
+  }
+}

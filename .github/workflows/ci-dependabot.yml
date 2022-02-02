@@ -1,0 +1,34 @@
+name: Dependabot Continuous Integration
+
+on:
+  pull_request_target:
+    branches: [main]
+
+jobs:
+  ci:
+    name: CI Dependabot
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checking out source code
+        uses: actions/checkout@v2
+
+      - name: Using Node 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+
+      - name: Installing dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Linting
+        run: yarn lint
+
+      - name: Build application
+        run: yarn build
+
+      - name: Automerge
+        uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          target: minor
+          github-token: ${{ secrets.AUTO_MERGE_TOKEN }}
