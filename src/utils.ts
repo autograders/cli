@@ -49,6 +49,8 @@ export function getConfig() {
  * @param token - JWT Token.
  */
 export function saveToken(token: string) {
+  const root = join(process.cwd(), cfg.dir);
+  if (!fs.existsSync(root)) return;
   const path = join(process.cwd(), cfg.dir, 'token');
   fs.writeFileSync(path, token, 'utf-8');
 }
