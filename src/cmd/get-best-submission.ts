@@ -5,7 +5,7 @@ import ora from 'ora';
 import { table } from 'table';
 
 import cfg from '@cfg';
-import { box, getConfig, getToken, title, toTable } from '@utils';
+import { box, getConfig, getToken, init, title, toTable } from '@utils';
 
 /**
  * GraphQL get best submission query.
@@ -41,6 +41,7 @@ const GET_BEST_SUBMISSION = gql`
  * Get best submission command.
  */
 export async function getBestSubmission() {
+  init();
   title('Get Best Submission');
 
   const spinner = ora({ text: 'Getting last submission...', color: 'yellow' });

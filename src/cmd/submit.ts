@@ -5,7 +5,7 @@ import { gql } from 'graphql-tag';
 import ora from 'ora';
 
 import cfg from '@cfg';
-import { getConfig, getToken, title, toTable, zipFiles } from '@utils';
+import { getConfig, getToken, init, title, toTable, zipFiles } from '@utils';
 
 /**
  * GraphQL create submission mutation.
@@ -33,6 +33,7 @@ const CREATE_SUBMISSION = gql`
  * Submit command.
  */
 export async function submit() {
+  init();
   title('Submit');
 
   const spinner = ora({ text: 'Creating submission...', color: 'yellow' });

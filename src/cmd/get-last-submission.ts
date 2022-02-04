@@ -5,7 +5,7 @@ import ora from 'ora';
 import { table } from 'table';
 
 import cfg from '@cfg';
-import { box, getConfig, getToken, title, toTable } from '@utils';
+import { box, getConfig, getToken, init, title, toTable } from '@utils';
 
 /**
  * GraphQL create submission mutation.
@@ -41,6 +41,7 @@ const GET_SUBMISSION = gql`
  * Get last submission command.
  */
 export async function getLastSubmission() {
+  init();
   title('Get Last Submission');
 
   const spinner = ora({ text: 'Getting last submission...', color: 'yellow' });

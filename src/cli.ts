@@ -10,7 +10,6 @@ import { signIn } from '@cmd/sign-in';
 import { signUp } from '@cmd/sign-up';
 import { submit } from '@cmd/submit';
 import { verifyEmail } from '@cmd/verify-email';
-import { init } from '@utils';
 
 export async function cli() {
   try {
@@ -27,8 +26,6 @@ export async function cli() {
       '--help': Boolean,
       '-h': Boolean
     });
-
-    init();
 
     if (opts['--help'] || opts['-h']) {
       help();
