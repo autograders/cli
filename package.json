@@ -46,7 +46,7 @@
   },
   "devDependencies": {
     "@autograders/eslint-config-node": "^1.0.2",
-    "@commitlint/cli": "^16.2.1",
+    "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@types/adm-zip": "^0.4.34",
     "@types/cli-table": "^0.3.0",
