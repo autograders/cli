@@ -295,10 +295,10 @@
   resolved "https://registry.yarnpkg.com/@types/cli-table/-/cli-table-0.3.0.tgz#f1857156bf5fd115c6a2db260ba0be1f8fc5671c"
   integrity sha512-QnZUISJJXyhyD6L1e5QwXDV/A5i2W1/gl6D6YMc8u0ncPepbv/B4w3S+izVvtAg60m6h+JP09+Y/0zF2mojlFQ==
 
-"@types/cookie@^0.5.0":
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.0.tgz#14ebcd209f2555e341548c31128d4deb34dfb2b0"
-  integrity sha512-CJWHVHHupxBYfIlMM+qzXx4dRKIV1VzOm0cP3Wpqten8MDx1tK+y92YDXUshN1ONAfwodvKxDNkw35/pNs+izg==
+"@types/cookie@^0.5.1":
+  version "0.5.1"
+  resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.1.tgz#b29aa1f91a59f35e29ff8f7cb24faf1a3a750554"
+  integrity sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==
 
 "@types/glob@^7.1.1":
   version "7.2.0"
