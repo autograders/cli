@@ -290,10 +290,10 @@
   dependencies:
     "@types/node" "*"
 
-"@types/cli-table@^0.3.2":
-  version "0.3.2"
-  resolved "https://registry.yarnpkg.com/@types/cli-table/-/cli-table-0.3.2.tgz#5619c66a5011f8588456292beff98cf33220b08d"
-  integrity sha512-yEwKAYmZsgb59xHtNRXaQAloxrm5xr8CQcrYerYlPK+3nwhPk1VC3QFwuiCd/jVWFu2hm4uFiiWDCJQSKhkROQ==
+"@types/cli-table@^0.3.3":
+  version "0.3.3"
+  resolved "https://registry.yarnpkg.com/@types/cli-table/-/cli-table-0.3.3.tgz#4edf5498af4fa39685504e17342b9346535a76e1"
+  integrity sha512-GJPxeQ/McVnizfipKsCuJg3tEXg6GZvoFjLlohJpWHjDcSIwSAjbCJNuHDVQyrHiRiINXspzrFc/Tt9ztvZCoA==
 
 "@types/cookie@^0.5.2":
   version "0.5.2"
