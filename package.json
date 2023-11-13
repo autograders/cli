@@ -51,7 +51,7 @@
     "@types/adm-zip": "^0.5.4",
     "@types/cli-table": "^0.3.3",
     "@types/cookie": "^0.5.3",
-    "@types/prompts": "^2.4.7",
+    "@types/prompts": "^2.4.8",
     "husky": "^7.0.4",
     "rimraf": "^3.0.2",
     "tscpaths": "^0.0.9",
