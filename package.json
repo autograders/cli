@@ -48,7 +48,7 @@
     "@autograders/eslint-config-node": "^1.0.2",
     "@commitlint/cli": "^16.3.0",
     "@commitlint/config-conventional": "^16.2.4",
-    "@types/adm-zip": "^0.5.4",
+    "@types/adm-zip": "^0.5.5",
     "@types/cli-table": "^0.3.4",
     "@types/cookie": "^0.5.4",
     "@types/prompts": "^2.4.9",
