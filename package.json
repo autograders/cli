@@ -42,7 +42,7 @@
     "graphql-tag": "^2.12.6",
     "ora": "5.4.1",
     "prompts": "^2.4.2",
-    "table": "^6.8.2"
+    "table": "^6.9.0"
   },
   "devDependencies": {
     "@autograders/eslint-config-node": "^1.0.2",
