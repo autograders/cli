@@ -34,7 +34,7 @@
   "dependencies": {
     "adm-zip": "^0.5.16",
     "arg": "^5.0.2",
-    "axios": "^0.30.1",
+    "axios": "^0.30.2",
     "boxen": "5.1.2",
     "cookie": "^0.7.2",
     "form-data": "^4.0.4",
